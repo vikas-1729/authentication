@@ -18,3 +18,15 @@ header{
     text-align: center;
     font-weight: 200;
 }
+.alert{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+.btn-google{
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: rgba(0,0,0,0.2);
+    margin-top:20px
+}

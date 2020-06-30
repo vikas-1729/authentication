@@ -32,7 +32,11 @@
         <div class="form-group">
           <label for="inputPassword">Password</label>
           <input type="password" class="form-control" id="inputPassword" name ="password" placeholder="Password should have min 5 character" minlength="5">
-        </div>
+        
+        <% if(errorMessage.length>0){%>
+          <small  class="alert alert-danger " id="emailHelp" class="form-text text-muted"><%= errorMessage %></small>
+        <% }%>
+      </div>
         <div class="form-group">
             <label for="inputCheckPassword">Retype Password</label>
             <input type="password" class="form-control" id="inputCheckPassword" name ="checkPassword" placeholder="again enter your password" >
