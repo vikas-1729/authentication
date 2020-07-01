@@ -43,4 +43,16 @@ userRouter.get('/changePassword',passport.checkAuthenticationUser,controller.cha
 
 //updating password
 userRouter.post('/updatePassword',controller.updatePassword);
+
+//resseting password first verify email
+userRouter.get('/resetPassword/verifyEmail',controller.verifyEmail);
+
+//confirming the email
+userRouter.post('/resetPassword/confirmEmail',controller.confirmEmail);
+//resettig password after getting link
+userRouter.get('/resetPassword',controller.resetPassword);
+
+//updating reset password;
+userRouter.post('/update/resetPassword',controller.updateResetPassword);
+//userRouter.get('/sendEmail',controller.sendEmail);
 module.exports=userRouter;

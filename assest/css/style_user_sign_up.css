@@ -30,3 +30,6 @@ header{
     border-color: rgba(0,0,0,0.2);
     margin-top:20px
 }
+.float-right{
+    float:right;
+}

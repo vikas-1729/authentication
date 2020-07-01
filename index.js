@@ -20,6 +20,7 @@ const passport = require('passport');
 const LocalStrategy=require('./config/passport-local');
 const GoogleStrategy=require('./config/passport-google-outh2');
 const MongoStore  = require('connect-mongo')(session);
+const nodemailer=require('nodemailer');
 //setting view engine
 app.set('view engine','ejs');
 app.set('views','./views');

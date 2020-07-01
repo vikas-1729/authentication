@@ -21,17 +21,17 @@
     <form action="/user/create" method="post">
         <div class="form-group">
             <label for="inputName">Your name</label>
-            <input type="text" class="form-control" id="inputEmail"  name="name" placeholder="xyz">
+            <input type="text" class="form-control" id="inputEmail"  name="name" placeholder="xyz" required>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
         <div class="form-group">
           <label for="inputEmail">Email address</label>
-          <input type="email" class="form-control" id="inputEmail"  name="email" placeholder="xyz@gmail.com">
+          <input type="email" class="form-control" id="inputEmail"  name="email" placeholder="xyz@gmail.com" required>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="inputPassword">Password</label>
-          <input type="password" class="form-control" id="inputPassword" name ="password" placeholder="Password should have min 5 character" minlength="5">
+          <input type="password" class="form-control" id="inputPassword" name ="password" placeholder="Password should have min 5 character" minlength="5" required>
         
         <% if(errorMessage.length>0){%>
           <small  class="alert alert-danger " id="emailHelp" class="form-text text-muted"><%= errorMessage %></small>
@@ -39,7 +39,7 @@
       </div>
         <div class="form-group">
             <label for="inputCheckPassword">Retype Password</label>
-            <input type="password" class="form-control" id="inputCheckPassword" name ="checkPassword" placeholder="again enter your password" >
+            <input type="password" class="form-control" id="inputCheckPassword" name ="checkPassword" placeholder="again enter your password" required>
           </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
